@@ -1,0 +1,20 @@
+{
+  "name": "system-inventory",
+  "version": "1.0.0",
+  "description": "For inventory and order management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bautistaJuan/inventory-orders-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bautistaJuan/inventory-orders-api/issues"
+  },
+  "homepage": "https://github.com/bautistaJuan/inventory-orders-api#readme"
+}
