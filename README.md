@@ -1,25 +1,34 @@
-inventory-orders-api/
-├── prisma/
-│   ├── schema.prisma           # Modelos y relaciones de PostgreSQL
-│   └── seed.ts                 # Script para poblar datos iniciales
-├── src/
-│   ├── config/
-│   │   └── env.ts              # Validación de variables de entorno con Zod
-│   ├── middlewares/
-│   │   ├── auth.middleware.ts  # Verificación de JWT y roles
-│   │   ├── validate.middleware.ts # Validación de body/query con Zod
-│   │   └── error.middleware.ts # Captura global de errores
-│   ├── modules/                # Cada entidad aislada con su lógica
-│   │   ├── auth/               # auth.routes.ts, auth.controller.ts, auth.service.ts, auth.schema.ts
-│   │   ├── products/
-│   │   └── orders/
-│   ├── utils/
-│   │   ├── AppError.ts         # Clase personalizada para errores HTTP
-│   │   ├── jwt.ts
-│   │   └── password.ts
-│   ├── app.ts                  # Configuración de Express (middlewares y rutas)
-│   └── server.ts               # Inicio del servidor
-├── tests/                      # Suite de API Testing con Playwright
-├── .env.example
-├── package.json
-└── tsconfig.json
+# Inventory & Orders API
+
+A RESTful backend API for managing product inventory, stock control, and customer orders, built with Node.js, Express, and TypeScript.
+
+## Tech Stack
+
+- **Runtime:** Node.js
+- **Framework:** Express
+- **Language:** TypeScript
+- **Dev Runner:** tsx
+
+## Getting Started
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+The server runs by default on `http://localhost:3000`.
+
+## Available Endpoints
+
+| Method | Endpoint | Description |
+| :--- | :--- | :--- |
+| `GET` | `/health` | Verifies that the server is up and running |
+
+## Project Status
+
+🚧 **In Progress** — Initial Express and TypeScript setup. Planned features include PostgreSQL with Prisma ORM, request validation with Zod, JWT authentication with role-based access, and automated API testing with Playwright.
