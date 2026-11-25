@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "contract:emit": "prisma contract emit"
   },
   "repository": {
     "type": "git",
@@ -20,11 +21,17 @@
   },
   "homepage": "https://github.com/bautistaJuan/inventory-orders-api#readme",
   "dependencies": {
-    "express": "^5.3.0"
+    "@prisma/client": "^7.10.1",
+    "@prisma/orm-postgres": "^8.0.0-rc.25",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "pg": "^8.23.1"
   },
   "devDependencies": {
+    "@prisma/cli-engine": "^0.10.4",
     "@types/express": "^5.0.6",
     "@types/node": "^26.6.6",
+    "prisma": "^8.0.0-rc.35",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }

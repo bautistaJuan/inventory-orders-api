@@ -1,5 +1,8 @@
 .idea
+node_modules/
+dist/
 notas.md
-node_modules
 ideas.md
 README_REFERENCE.md
+.env
+prisma-8.md
